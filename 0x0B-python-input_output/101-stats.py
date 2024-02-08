@@ -1,4 +1,5 @@
-ds from standard input and calculate metrics
+#!/usr/bin/python3
+"""Reads from standard input and calculate metrics
 
 After every ten lines or the input of a keyboard interruption (CTRL + C),
 prints the following statistics:
