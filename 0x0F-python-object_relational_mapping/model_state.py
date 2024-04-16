@@ -9,12 +9,12 @@ mymetadata = MetaData[]
 Base = declarative_base(metadata=mymetadata)
 
 
-Class States[Base];
+class States (Base):
+    """Represents a state for the MySQL database.
 
+    __tablename__ (str): The name of the MySQL table to store states.
+    id (sqlalchemy.Integer): The states's id.
+    name (sqlalchemy.String): The states's name.
     """
-    Class with attributes of a state
-    """
-
-    __tablename__= 'states'
-    id = column(Integer, unique=True, nullable=False, primary_Key=True)
-    name = Column(String(128), nullable=False)
+    __tablename__= "states"
+    id = Column(String(128), nullable=False)
