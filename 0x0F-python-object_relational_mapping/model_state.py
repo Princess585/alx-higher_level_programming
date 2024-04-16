@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/python3
 
 """File that contains the class def of state and base = declarative"""
 from sqlchemy import Column, Integer, String, MetaData
